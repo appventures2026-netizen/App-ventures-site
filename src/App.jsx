@@ -4,6 +4,7 @@ import About from './components/About.jsx'
 import Portfolio from './components/Portfolio.jsx'
 import Footer from './components/Footer.jsx'
 import RiseMatePrivacyPage from './pages/RiseMatePrivacyPage.jsx'
+import ValePrivacyPage from './pages/ValePrivacyPage.jsx'
 import './App.css'
 
 function App() {
@@ -11,6 +12,10 @@ function App() {
 
   if (path === 'privacy/risemate') {
     return <RiseMatePrivacyPage />
+  }
+
+  if (path === 'privacy/vale') {
+    return <ValePrivacyPage />
   }
 
   return (

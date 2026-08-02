@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  BEFORE PUBLISHING — replace the following placeholders throughout this file:
+    1. "AppVentures"                 -> your registered developer / company name
+    2. support@vale-app.example.com  -> your real support email address
+    3. Confirm the "Last updated" date below is the date you publish
+
+  These come from src/data/legalLinks.ts, which is still marked as placeholder
+  data in the codebase. Update that file to point at this page once hosted.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vale: Breathing and Calm - Privacy Policy &amp; EULA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #3F5B4E 0%, #2E4238 50%, #223129 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #3F5B4E 0%, #2E4238 100%);
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: #A8D5C0;
+    }
+
+    .header p {
+      font-size: 16px;
+      color: #C8D6CE;
+    }
+
+    .nav {
+      background: #f5f5f5;
+      padding: 15px 30px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .nav a {
+      color: #2E4238;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover {
+      color: #7FA695;
+    }
+
+    .content {
+      padding: 40px 30px;
+    }
+
+    .intro-box {
+      background: #FBF1E6;
+      border-left: 4px solid #D9A05B;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #2E4238;
+      font-size: 28px;
+      font-weight: 800;
+      margin: 40px 0 20px 0;
+      padding-top: 20px;
+      border-top: 3px solid #7FA695;
+    }
+
+    h3 {
+      color: #2E4238;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 25px 0 12px 0;
+    }
+
+    h4 {
+      color: #374151;
+      font-size: 17px;
+      font-weight: 700;
+      margin: 20px 0 10px 0;
+    }
+
+    p {
+      color: #4B5563;
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 16px;
+    }
+
+    ul li {
+      padding: 6px 0 6px 24px;
+      position: relative;
+      color: #4B5563;
+      font-size: 15px;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 8px;
+      color: #7FA695;
+      font-weight: bold;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #2E4238;
+      color: #A8D5C0;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    .note-box {
+      background: #EDF3F6;
+      border-left: 4px solid #A8C3D0;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+    .note-box p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .uppercase-section {
+      background: #F9FAFB;
+      border: 1px solid #E5E7EB;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+    .uppercase-section p {
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #6B7280;
+      letter-spacing: 0.03em;
+    }
+
+    .section-divider {
+      border: none;
+      border-top: 2px solid #E5E7EB;
+      margin: 40px 0;
+    }
+
+    .last-updated {
+      color: #9CA3AF;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+
+    .footer {
+      background: #2E4238;
+      color: #C8D6CE;
+      padding: 24px 30px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #A8D5C0;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      .header { padding: 28px 20px; }
+      .header h1 { font-size: 24px; }
+      .content { padding: 24px 18px; }
+      h2 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Vale: Breathing and Calm</h1>
+      <p>Privacy Policy &amp; End User License Agreement (EULA)</p>
+      <p class="last-updated">Last updated: August 1, 2026</p>
+    </div>
+
+    <div class="nav">
+      <a href="#privacy-policy">Privacy Policy</a>
+      <a href="#health-data">Health Data</a>
+      <a href="#eula">EULA</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="content">
+      <div class="intro-box">
+        <p><strong>Important:</strong> This page contains the Privacy Policy and End User License Agreement (EULA) for Vale: Breathing and Calm. By downloading, installing, or using the App, you agree to both documents. Vale also contains breathing techniques that carry real physical risks — please read the <a href="#safety"><strong>Health &amp; Safety</strong></a> section before practising.</p>
+      </div>
+
+      <!-- PRIVACY POLICY SECTION -->
+      <h2 id="privacy-policy">Privacy Policy</h2>
+
+      <h3>Scope</h3>
+      <p>Welcome to Vale's Privacy Policy. Your privacy is important to us. This Privacy Policy explains how Vale ("we", "our", or "us") collects, uses, protects, and shares information when you use our guided breathing mobile application and related services (the "App" or "Services"), available on the Apple App Store.</p>
+      <p>If you do not agree with this Privacy Policy, please do not use our Services.</p>
+
+      <h3>Overview</h3>
+      <p>Vale is a guided breathing app. It plays timed breathing exercises, keeps a history of the sessions you complete, can remind you to practise, and — only if you choose to connect it — reads recent trends from Apple Health to suggest when a session might help.</p>
+      <ul>
+        <li><strong>Vale has no user accounts.</strong> There is no sign-up, no login, no password, and no email address required to use the App.</li>
+        <li><strong>Vale has no servers of its own.</strong> Your session history, reminders, mood entries, and preferences are stored only on your device.</li>
+        <li><strong>Your Apple Health data never leaves your device.</strong> It is read on-device, used on-device, and never transmitted, shared, or used for advertising.</li>
+        <li>Vale does not publish anything about you to the internet, and there is no social or sharing feed.</li>
+      </ul>
+
+      <div class="note-box">
+        <p><strong>Note:</strong> Because Vale stores your practice data locally rather than in the cloud, that data is not backed up by us and cannot be recovered by us. It is included in your device's own iCloud or encrypted local backups, and deleting the App deletes it.</p>
+      </div>
+
+      <h3>1. No Account Registration</h3>
+      <p>Unlike most apps, Vale does not ask you to create an account. We do not collect:</p>
+      <ul>
+        <li>Your name</li>
+        <li>Your email address</li>
+        <li>A password or any login credential</li>
+        <li>Social or third-party sign-in identities</li>
+      </ul>
+      <p>You can optionally enter a first name during onboarding so the App can greet you. That name is stored only on your device and is never transmitted to us or anyone else.</p>
+
+      <h3>2. Information We Collect</h3>
+
+      <h4>2.1 Information You Provide (stored on your device)</h4>
+      <p>The following is created by you inside the App and saved locally in the App's own storage. We have no access to it:</p>
+      <ul>
+        <li>Completed session records — which exercise, when, how long, and how many rounds</li>
+        <li>Optional mood ratings you record after a session</li>
+        <li>Breathing reminders you schedule (time, days of the week, and chosen exercise)</li>
+        <li>Your preferences — haptics, ambient sound, phase cue tones, and onboarding goals</li>
+        <li>An optional first name, and your acknowledgement of exercise safety notices</li>
+      </ul>
+
+      <h4 id="health-data">2.2 Apple Health Data (optional, on-device only)</h4>
+      <p>Connecting Apple Health is entirely optional and off by default. If you grant permission, Vale reads the following through Apple's HealthKit framework:</p>
+      <ul>
+        <li>Heart rate</li>
+        <li>Heart rate variability (HRV)</li>
+        <li>Resting heart rate</li>
+        <li>Sleep analysis</li>
+      </ul>
+      <p>Vale reads roughly the last 14 days of these samples, averages them into daily trend points on your device, and uses them to suggest a suitable breathing session. If you complete a session, Vale writes <strong>Mindful Minutes</strong> back to Apple Health.</p>
+
+      <div class="note-box">
+        <p><strong>Health data commitment:</strong> Health and fitness data read through HealthKit is processed entirely on your device. It is never transmitted to us or to any third party, never used for advertising or marketing, never used for data mining, and never sold. You can revoke Vale's Health access at any time in the iOS Health app under Sharing &gt; Apps.</p>
+      </div>
+
+      <h4>2.3 Usage Information</h4>
+      <p>Vale does not include any analytics, telemetry, crash reporting, or behavioural tracking SDK. We do not collect information about which screens you view, which features you use, how long you spend in the App, or your interaction patterns. We receive no usage reports about you at all.</p>
+      <p>Apple may independently provide us with aggregated, anonymised App Store metrics (such as total downloads and aggregate crash counts) if you have enabled sharing of analytics with developers in your iOS settings. That data is aggregated by Apple and does not identify you.</p>
+
+      <h4>2.4 Device &amp; Advertising Data</h4>
+      <p>Vale is supported by advertising in its free version. Our advertising partner, TopOn (together with the ad networks it mediates), may collect and process:</p>
+      <ul>
+        <li>Device type, model, operating system, and app version</li>
+        <li>IP address, and coarse location inferred from it (Vale does not request or access GPS location)</li>
+        <li>The Identifier for Advertisers (IDFA), <strong>only if you grant App Tracking Transparency permission</strong></li>
+        <li>Ad interaction data such as impressions, clicks, and completions</li>
+      </ul>
+      <p>If you decline the tracking prompt, Vale and its ad partners do not access the IDFA, and you will receive non-personalised advertising instead.</p>
+
+      <h4>2.5 Billing Information</h4>
+      <p>If you subscribe to Vale Pro, payment is processed by the Apple App Store and managed through our subscription partner, RevenueCat. We never see, collect, or store your payment card details. We receive only subscription status and purchase metadata — such as whether an entitlement is active, the product purchased, and renewal or expiry dates — associated with an anonymous RevenueCat identifier, not with your name or email.</p>
+
+      <h4>2.6 Notifications</h4>
+      <p>Breathing reminders are scheduled and delivered locally by your device. Vale does not operate a push notification server, does not register device push tokens, and does not send you remote marketing messages. Reminder content never leaves your device.</p>
+
+      <h3>3. How We Use Your Information</h3>
+      <p>We use the limited information described above to:</p>
+      <ul>
+        <li>Run guided breathing sessions and keep your practice history and streaks on your device</li>
+        <li>Suggest a breathing exercise based on your recent Apple Health trends, where you have connected Health</li>
+        <li>Record completed sessions to Apple Health as Mindful Minutes</li>
+        <li>Deliver the local reminders you schedule</li>
+        <li>Unlock and maintain Vale Pro features for active subscribers</li>
+        <li>Temporarily unlock an individual exercise when you choose to watch a rewarded advertisement</li>
+        <li>Display advertising in the free version of the App</li>
+        <li>Respond to support requests you send us by email</li>
+        <li>Comply with legal obligations</li>
+      </ul>
+      <p>We do not use your information to build a profile about you, and we do not use Apple Health data for any purpose other than the in-App suggestions and Mindful Minutes logging described above.</p>
+
+      <h3>4. How We Share Your Information</h3>
+
+      <h4>4.1 With Service Providers</h4>
+      <p>Because Vale has no backend of its own, the list of parties that receive any data is deliberately short:</p>
+      <ul>
+        <li><strong>Apple:</strong> App distribution, in-app purchase and subscription processing, and HealthKit (which operates entirely on your device).</li>
+        <li><strong>RevenueCat:</strong> Subscription entitlement management, using an anonymous identifier and purchase metadata.</li>
+        <li><strong>TopOn:</strong> Advertising mediation and delivery for free users, together with the ad networks it mediates.</li>
+      </ul>
+      <p>We do not use any cloud database, hosting provider, authentication provider, analytics provider, crash reporting provider, or AI processing service.</p>
+
+      <h4>4.2 Health Data Is Never Shared</h4>
+      <p>To state it unambiguously: data read from Apple HealthKit is never shared with RevenueCat, TopOn, any ad network, any analytics provider, or any other third party. It is never used to target or personalise advertising. It does not leave your device.</p>
+
+      <h4>4.3 Legal Requirements</h4>
+      <p>We may disclose information if required by law, regulation, legal process, or governmental request, or when we believe disclosure is necessary to protect the rights, property, or safety of AppVentures, our users, or others. In practice we hold very little information that could be disclosed.</p>
+
+      <h4>4.4 Business Transfers</h4>
+      <p>If Vale is involved in a merger, acquisition, reorganization, or sale of assets, information we hold may be transferred as part of that transaction. We will notify users of any material change in ownership or use of personal information.</p>
+
+      <h4>4.5 Non-Personal Data</h4>
+      <p>We may share aggregated or anonymized data that cannot reasonably be used to identify you for research and business purposes.</p>
+
+      <p><strong>We do not sell your personal information.</strong></p>
+
+      <h3>5. Permissions</h3>
+      <p>Vale may request the following permissions. Each is optional, and the App's core breathing exercises work without any of them:</p>
+      <ul>
+        <li><strong>Apple Health (read):</strong> To read heart rate, HRV, resting heart rate, and sleep trends so the App can suggest a suitable session. Declining simply removes the personalised suggestions.</li>
+        <li><strong>Apple Health (write):</strong> To log completed sessions as Mindful Minutes.</li>
+        <li><strong>Notifications:</strong> To deliver the breathing reminders you schedule. You can disable these in iOS Settings at any time.</li>
+        <li><strong>App Tracking Transparency:</strong> To allow personalised advertising in the free version. Declining results in non-personalised ads.</li>
+        <li><strong>Background App Refresh:</strong> To receive Health updates in the background so trend-based suggestions stay current.</li>
+      </ul>
+      <p>Vale does <strong>not</strong> request microphone, camera, photo library, contacts, or precise location access. The App plays audio but never records it.</p>
+
+      <h3>6. Data Security</h3>
+      <p>Your practice data is stored in the App's private storage area on your device, protected by iOS application sandboxing and your device passcode and encryption. Because this data is never transmitted to a server of ours, it is not exposed to the risks associated with cloud storage or data breaches on our side.</p>
+      <p>Data transmitted to Apple, RevenueCat, and our advertising partner is sent over encrypted connections. No system is completely secure, and we cannot guarantee absolute security of information transmitted or stored through the Services.</p>
+
+      <h3>7. Cookies &amp; Tracking Technologies</h3>
+      <p>Vale itself does not use cookies. Our advertising partner and the ad networks it mediates may use device identifiers, and similar technologies within ad content, to measure and deliver advertising. This is subject to your App Tracking Transparency choice as described above.</p>
+
+      <h3>8. Advertising</h3>
+      <p>The free version of Vale displays advertising through TopOn, including banner, interstitial, app-open, and optional rewarded advertisements. Rewarded advertisements are always your choice — they let you temporarily unlock a single Pro exercise without subscribing.</p>
+      <p><strong>Vale Pro subscribers see no advertisements of any kind.</strong></p>
+      <p>You can control ad personalisation on your device:</p>
+      <ul>
+        <li><strong>iOS:</strong> Settings &gt; Privacy &amp; Security &gt; Tracking — turn off "Allow Apps to Request to Track", or disable tracking for Vale specifically.</li>
+        <li><strong>iOS:</strong> Settings &gt; Privacy &amp; Security &gt; Apple Advertising — turn off "Personalized Ads".</li>
+      </ul>
+
+      <h3>9. Subscriptions &amp; Payments</h3>
+      <p>Vale offers an optional Pro subscription. When you subscribe:</p>
+      <ul>
+        <li>Payment is processed by the Apple App Store via RevenueCat. We do not collect or store your payment card details.</li>
+        <li>We receive subscription status and related purchase metadata in order to unlock Pro features.</li>
+        <li>Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period.</li>
+        <li>Refunds and billing disputes are handled according to Apple's policies.</li>
+        <li>You can manage or cancel your subscription at any time in your Apple ID account settings.</li>
+      </ul>
+
+      <h3>10. Third-Party Services</h3>
+      <p>Vale integrates the following third-party services, each governed by its own privacy policy, which we encourage you to review:</p>
+      <ul>
+        <li>Apple — App Store, in-app purchases, HealthKit, and local notifications</li>
+        <li>RevenueCat — subscription entitlement management</li>
+        <li>TopOn — advertising mediation, and the ad networks it mediates</li>
+      </ul>
+
+      <h3>11. Your Rights</h3>
+
+      <h4>11.1 Access &amp; Deletion</h4>
+      <p>Your practice history, reminders, mood entries, and preferences live on your device, so you have direct access to all of it inside the App at any time. You can delete individual session records from the History screen, and deleting the App removes all of it permanently from your device.</p>
+
+      <h4>11.2 Communication Preferences</h4>
+      <p>All notifications from Vale are reminders you created yourself. You can edit or delete them in the App, or disable notifications entirely in iOS Settings.</p>
+
+      <h4>11.3 Apple Health Access</h4>
+      <p>You can revoke Vale's access to Apple Health at any time in the iOS Health app under Sharing &gt; Apps &gt; Vale, or disconnect it from within Vale's own Settings screen. Mindful Minutes already written to Health remain under your control in the Health app.</p>
+
+      <h4>11.4 Advertising Choices</h4>
+      <p>You can withdraw tracking consent at any time in iOS Settings, as described in section 8, or remove advertising altogether by subscribing to Vale Pro.</p>
+
+      <div class="note-box">
+        <p><strong>Note:</strong> Because Vale holds no account and no server-side profile, there is no stored personal record for us to retrieve, correct, or erase on request. Deleting the App is a complete and immediate erasure of everything Vale holds about you.</p>
+      </div>
+
+      <h4>11.5 For EU/EEA and UK Residents (GDPR)</h4>
+      <p>If you are located in the European Union, European Economic Area, or United Kingdom, you have rights under the General Data Protection Regulation, including the right to access, rectify, erase, restrict processing, data portability, and to object to certain processing. You also have the right to lodge a complaint with your supervisory authority. As noted above, most of these rights are exercised directly on your device.</p>
+
+      <h4>11.6 For California Residents (CCPA/CPRA)</h4>
+      <p>If you are a California resident, you have rights under the California Consumer Privacy Act and California Privacy Rights Act, including the right to know what personal information is collected, the right to request deletion, and the right to opt out of the sale or sharing of personal information. <strong>We do not sell personal information.</strong> Sharing for cross-context behavioural advertising occurs only where you have granted App Tracking Transparency permission, which you can withdraw at any time.</p>
+
+      <p>To exercise your privacy rights, contact us at <strong>support@vale-app.example.com</strong>. We aim to respond within 30 days.</p>
+
+      <h3>12. Data Retention</h3>
+      <p>Session history, reminders, and preferences remain on your device until you delete them or delete the App. We do not retain copies. Subscription records held by Apple and RevenueCat are retained according to their own policies and applicable tax and accounting obligations. Advertising identifiers and related data are retained by our advertising partners according to their policies.</p>
+
+      <h3>13. Children's Privacy</h3>
+      <p>Vale is not intended for users under 13 years of age (or the applicable age of consent in your jurisdiction). We do not knowingly collect personal information from children. Several breathing techniques offered in the App — particularly those involving breath retention — are not appropriate for children and should not be practised by them.</p>
+      <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <strong>support@vale-app.example.com</strong>.</p>
+
+      <h3>14. International Transfers</h3>
+      <p>Your practice and Health data stay on your device and are not transferred internationally by us. Limited subscription and advertising data processed by Apple, RevenueCat, and our advertising partners may be processed in countries other than your own. Those providers implement safeguards such as standard contractual clauses or equivalent mechanisms as required by applicable law.</p>
+
+      <h3>15. Legal Basis for Processing</h3>
+      <p>Where applicable law requires a legal basis for processing personal data, we rely on one or more of the following:</p>
+      <ul>
+        <li><strong>Consent:</strong> For Apple Health access, notifications, and personalised advertising — each requested separately and each withdrawable at any time.</li>
+        <li><strong>Contractual necessity:</strong> To provide the Services you request, including Pro subscription entitlements.</li>
+        <li><strong>Legal obligations:</strong> To comply with applicable laws and regulations.</li>
+        <li><strong>Legitimate interests:</strong> To keep the free version of the App supported through advertising, to secure the Services, and to prevent fraud, balanced against your rights and interests.</li>
+      </ul>
+
+      <h3>16. Changes to This Policy</h3>
+      <p>We may update this Privacy Policy from time to time. Changes take effect upon posting, and we will update the "Last updated" date at the top of this page. For material changes that significantly affect your rights, we will provide notice through the App or other appropriate means.</p>
+      <p>We encourage you to review this policy periodically.</p>
+
+      <h3 id="contact">17. Contact Us</h3>
+      <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
+      <ul>
+        <li><strong>Email:</strong> support@vale-app.example.com</li>
+        <li><strong>Developer:</strong> AppVentures</li>
+      </ul>
+
+      <hr class="section-divider">
+
+      <!-- EULA SECTION -->
+      <h2 id="eula">End User License Agreement (EULA)</h2>
+      <p>This End User License Agreement ("Agreement") is a legal agreement between you ("User" or "you") and AppVentures ("Licensor", "we", "our", or "us") for the Vale: Breathing and Calm mobile application (the "App"). By downloading, installing, or using the App, you agree to be bound by this Agreement. If you do not agree, do not download, install, or use the App.</p>
+
+      <h3>1. License Grant</h3>
+      <p>Subject to your compliance with this Agreement, we grant you a limited, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, solely for personal, non-commercial purposes, in accordance with this Agreement and applicable app store terms.</p>
+
+      <h3>2. Restrictions</h3>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Copy, modify, adapt, or create derivative works of the App</li>
+        <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App, except where expressly permitted by law</li>
+        <li>Rent, lease, lend, sell, sublicense, or distribute the App or any part of it</li>
+        <li>Remove, alter, or obscure any proprietary notices or labels on the App</li>
+        <li>Use the App for any unlawful purpose or in violation of any applicable laws or regulations</li>
+        <li>Interfere with, disrupt, or attempt to circumvent the App's subscription controls or advertising</li>
+        <li>Use automated systems or bots to access or use the App without our written consent</li>
+        <li>Present the App's exercises as medical treatment, or use the App to instruct others in a professional or clinical capacity without appropriate qualifications</li>
+      </ul>
+
+      <h3>3. Intellectual Property</h3>
+      <p>The App, including its design, trademarks, software, written guidance, and audio content, is owned by AppVentures or its licensors and is protected by copyright, trademark, and other intellectual property laws. This Agreement does not transfer any ownership rights to you. The breathing techniques themselves are long-established practices in the public domain; our particular expression, sequencing, timing, and presentation of them is not.</p>
+
+      <h3 id="safety">4. Health &amp; Safety — Please Read</h3>
+      <div class="intro-box">
+        <p><strong>Breathing exercises are not risk-free.</strong> Techniques offered in this App include voluntary hyperventilation and extended breath retention. These can cause dizziness, light-headedness, tingling, and <strong>fainting or loss of consciousness</strong>, sometimes without warning.</p>
+      </div>
+      <p>You agree that you will:</p>
+      <ul>
+        <li><strong>Never practise breath retention or power breathing in or near water</strong>, including in a bath, pool, or open water. Loss of consciousness in water can be fatal.</li>
+        <li>Never practise while driving, cycling, operating machinery, standing at height, or in any other situation where fainting could cause injury.</li>
+        <li>Practise seated or lying down, in a safe place where a fall could not harm you.</li>
+        <li>Stop immediately and breathe normally if you feel unwell, faint, or distressed.</li>
+      </ul>
+      <p>Consult a qualified physician before using the App if you are pregnant, or if you have or may have any cardiovascular condition, high or low blood pressure, a history of stroke, epilepsy or a seizure disorder, asthma or another respiratory condition, glaucoma, a panic or anxiety disorder, or any other medical condition that may be affected by altered breathing.</p>
+      <p>Where the App displays a safety notice for a specific exercise, you agree to read it and to acknowledge it truthfully. Acknowledging a safety notice confirms that you have read and understood the risk and accept it voluntarily.</p>
+
+      <h3>5. Not Medical Advice</h3>
+      <p>Vale is a general wellness and relaxation tool. It is <strong>not</strong> a medical device, and it does not diagnose, treat, cure, monitor, or prevent any disease or medical condition. Nothing in the App constitutes medical advice, and no content in the App is a substitute for consultation with a qualified healthcare professional.</p>
+      <p>Any information derived from Apple Health — including heart rate, heart rate variability, resting heart rate, and sleep trends — is presented only as general contextual information to inform an optional relaxation suggestion. It is not a clinical measurement, is not monitored by us or by any clinician, and must never be relied upon to detect, diagnose, or make decisions about any health condition. If you have a health concern, seek medical attention; do not rely on this App.</p>
+      <p><strong>Never disregard professional medical advice or delay seeking it because of something you have read or seen in this App. In an emergency, contact your local emergency services immediately.</strong></p>
+
+      <h3>6. Assumption of Risk</h3>
+      <p>You acknowledge that you use the App and perform its exercises voluntarily and entirely at your own risk. You are solely responsible for assessing your own fitness to practise any technique offered, for choosing a safe environment in which to practise, and for stopping when appropriate. To the maximum extent permitted by law, you assume all risk of injury arising from your use of the App.</p>
+
+      <h3>7. Permissions &amp; Device Access</h3>
+      <p>The App may request access to Apple Health, notifications, background app refresh, and App Tracking Transparency to support features described in our Privacy Policy. Every one of these is optional. You may deny any of them and continue to use the App's breathing exercises; related features will simply be unavailable.</p>
+
+      <h3>8. Third-Party Services</h3>
+      <p>The App integrates third-party services for subscription management and advertising. These services are governed by their own terms and privacy policies. We are not responsible for third-party services, content, or practices, including the content of advertisements served through them.</p>
+
+      <h3>9. Subscriptions &amp; In-App Purchases</h3>
+      <p>Vale offers an optional Pro subscription unlocking the full exercise library, Health-aware suggestions, and additional insights, and removing advertising. Payment and billing are processed by the Apple App Store via RevenueCat. Refunds and billing disputes are handled according to Apple's policies. We do not store your payment card details.</p>
+      <p>Free trials, if offered, convert to paid subscriptions unless cancelled before the trial ends, in accordance with Apple's rules. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period.</p>
+      <p>The App may also offer optional rewarded advertisements that temporarily unlock an individual Pro exercise. Such temporary access is a convenience only, confers no ongoing entitlement, and may be changed or withdrawn at any time.</p>
+
+      <h3>10. Disclaimer of Warranties</h3>
+      <div class="uppercase-section">
+        <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE, THAT SESSION TIMING OR HEALTH TREND INFORMATION WILL BE ACCURATE OR COMPLETE, THAT REMINDERS WILL BE DELIVERED, OR THAT THE APP WILL PRODUCE ANY PARTICULAR HEALTH, WELLNESS, OR RELAXATION OUTCOME.</p>
+      </div>
+
+      <h3>11. Limitation of Liability</h3>
+      <div class="uppercase-section">
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, APPVENTURES AND ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE APP, INCLUDING ANY PERSONAL INJURY, FAINTING, OR MEDICAL EVENT ARISING FROM PERFORMING A BREATHING EXERCISE, ANY RELIANCE ON HEALTH TREND INFORMATION, OR ANY LOSS OF LOCALLY STORED SESSION HISTORY.</p>
+        <p>OUR TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE APP SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US FOR THE APP IN THE TWELVE (12) MONTHS BEFORE THE CLAIM, OR (B) FIFTY U.S. DOLLARS (USD $50), WHERE PERMITTED BY LAW.</p>
+        <p>NOTHING IN THIS AGREEMENT EXCLUDES OR LIMITS LIABILITY FOR DEATH OR PERSONAL INJURY CAUSED BY NEGLIGENCE, FOR FRAUD, OR FOR ANY OTHER LIABILITY THAT CANNOT LAWFULLY BE EXCLUDED OR LIMITED.</p>
+      </div>
+
+      <h3>12. Indemnification</h3>
+      <p>You agree to indemnify and hold harmless AppVentures from any claims, damages, losses, liabilities, and expenses (including reasonable legal fees) arising from your use of the App, your failure to observe the health and safety requirements in section 4, or your violation of this Agreement or applicable law.</p>
+
+      <h3>13. Termination</h3>
+      <p>This license is effective until terminated. We may suspend or terminate your access to the App at any time if you breach this Agreement. Upon termination, you must cease all use of the App and delete all copies from your devices. Sections that by their nature should survive termination — including sections 4, 5, 6, 10, 11, and 12 — will survive.</p>
+
+      <h3>14. Changes to This Agreement</h3>
+      <p>We may update this EULA from time to time. Continued use of the App after changes become effective constitutes acceptance of the revised Agreement. The "Last updated" date at the top of this page will reflect material revisions.</p>
+
+      <h3>15. Governing Law &amp; Disputes</h3>
+      <p>This Agreement is governed by the laws of the jurisdiction in which AppVentures operates, without regard to conflict-of-law principles, except where mandatory consumer protection laws in your country provide otherwise. Any dispute shall be resolved in the courts of that jurisdiction, unless applicable law requires a different forum.</p>
+
+      <h3>16. Children</h3>
+      <p>The App is not intended for children under 13 years of age (or the applicable age of consent in your jurisdiction). Breath retention and power breathing techniques are not suitable for children and should not be practised by them.</p>
+
+      <h3>17. Apple App Store (iOS)</h3>
+      <p>If you obtained the App through the Apple App Store, you also agree that:</p>
+      <ul>
+        <li>This Agreement is between you and AppVentures only, not Apple Inc. ("Apple").</li>
+        <li>Apple is not responsible for the App or its content, maintenance, support, or warranty obligations.</li>
+        <li>Apple has no obligation to furnish maintenance or support services for the App.</li>
+        <li>In the event of any failure of the App to conform to any applicable warranty, you may notify Apple for a refund of the purchase price (if any); to the maximum extent permitted by law, Apple has no other warranty obligation.</li>
+        <li>Apple is not responsible for addressing any claims relating to the App, including product liability, legal compliance, consumer protection, privacy, or intellectual property infringement.</li>
+        <li>Apple and its subsidiaries are third-party beneficiaries of this Agreement and may enforce it against you as a third-party beneficiary.</li>
+        <li>You represent that you are not located in a country subject to a U.S. Government embargo or designated as a "terrorist supporting" country, and that you are not listed on any U.S. Government prohibited or restricted party list.</li>
+        <li>You must comply with applicable third-party terms when using the App (e.g., wireless data service agreements).</li>
+      </ul>
+
+      <h3>18. Google Play (Android)</h3>
+      <p>Vale is currently distributed only through the Apple App Store. If the App is in future made available through Google Play, you agree that Google LLC is not a party to this Agreement and has no responsibility or liability with respect to the App, and that your use of Google Play is subject to Google Play's terms of service.</p>
+
+      <h3>19. Severability &amp; Entire Agreement</h3>
+      <p>If any provision of this Agreement is held invalid or unenforceable, the remaining provisions remain in full force. This Agreement, together with our Privacy Policy, constitutes the entire agreement between you and AppVentures regarding the App and supersedes prior understandings on the same subject.</p>
+
+      <h3>20. Contact</h3>
+      <p>For questions about this EULA, contact AppVentures at <strong>support@vale-app.example.com</strong>.</p>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 AppVentures — All Rights Reserved</p>
+      <p style="margin-top: 8px;"><a href="mailto:support@vale-app.example.com">support@vale-app.example.com</a></p>
+    </div>
+  </div>
+</body>
+</html>
