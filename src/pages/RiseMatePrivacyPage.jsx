@@ -50,7 +50,7 @@ export default function RiseMatePrivacyPage() {
         <div className="privacy-screen__header">
           <h1>RiseMate</h1>
           <p>Privacy Policy &amp; End User License Agreement (EULA)</p>
-          <p className="privacy-screen__updated">Last updated: July 18, 2026</p>
+          <p className="privacy-screen__updated">Last updated: August 9, 2026</p>
         </div>
 
         <ScrollNav />
@@ -83,48 +83,92 @@ export default function RiseMatePrivacyPage() {
             RiseMate is a habit-accountability alarm app. To silence an alarm, you must complete a
             short &ldquo;mission&rdquo; &mdash; solving math problems, shaking your phone, typing a
             verse or affirmation, or taking a verification photo &mdash; and the app tracks your
-            wake-up streak over time.
+            wake-up streak over time. RiseMate also offers optional Friends and Group Alarm
+            features that let you wake up alongside people you choose to connect with.
           </p>
           <ul>
-            <li>RiseMate does not require an account, sign-up, or login to use its core features.</li>
             <li>
-              Your alarms, mission settings, and streak history are stored locally on your device
-              &mdash; RiseMate does not operate a backend server that stores this data on your
-              behalf, except where you enable an optional Premium cloud-backup feature described
-              in Section 9.
+              RiseMate does not require you to register with an email address or password. The
+              App&rsquo;s core alarm and mission features work without you ever setting up a
+              username.
             </li>
             <li>
-              RiseMate has no social features &mdash; your data is never published, shared with
-              other users, or made public.
+              Your alarms, mission settings, and personal streak history are stored locally on
+              your device. Separately, if you set up a username to use Friends or Group Alarms,
+              that username and the data needed to run those features (described in Sections 2
+              and 4) are stored on our servers.
+            </li>
+            <li>
+              RiseMate&rsquo;s Friends and Group Alarm features are social by design: your
+              username, display name, and wake-up mission status become visible to the friends
+              and group-alarm participants you choose to connect with. This data is never made
+              public to people you have not connected with, and is never sold.
             </li>
           </ul>
 
-          <h3>1. No Account Required</h3>
+          <h3>1. Accounts &amp; Usernames</h3>
           <p>
-            Unlike many apps, RiseMate does not require you to register, sign in, or provide an
-            email address or password to use the App. During onboarding you may optionally enter
-            your first name so the App can greet you by name; this is stored locally on your
-            device only and is never transmitted to us or any third party.
+            RiseMate does not require you to register, sign in, or provide an email address or
+            password to use the App&rsquo;s core alarm and mission features. However, the first
+            time you open the App (and again whenever the Friends tab needs one), RiseMate
+            automatically creates an anonymous account for your device using our backend provider,
+            Supabase, so that any data you choose to share with friends can be reliably linked back
+            to you. This anonymous account has no email, password, or phone number attached to it.
+          </p>
+          <p>
+            During onboarding &mdash; or later from Settings &mdash; you may claim a unique
+            username (and an optional display name) so that other RiseMate users can find and add
+            you as a friend. This username is not merely a local greeting name: it is stored on our
+            servers and is searchable by other users of the App. You can skip this step and use
+            RiseMate&rsquo;s core alarm and mission features without ever claiming a username.
           </p>
 
           <h3>2. Information We Collect</h3>
 
           <h4>2.1 Information You Provide</h4>
           <ul>
-            <li>Your first name (optional, for on-screen personalization only)</li>
             <li>
               Alarm settings &mdash; wake times, repeat days, chosen mission type and difficulty,
-              custom labels, and alarm tone selection
+              custom labels, and alarm tone selection (stored locally on your device)
             </li>
             <li>
-              Your wake-up streak history &mdash; dates, win/loss/skipped status, and the time you
-              confirmed you woke up
+              Your personal wake-up streak history &mdash; dates, win/loss/skipped status, and the
+              time you confirmed you woke up (stored locally on your device)
             </li>
-            <li>App preferences, such as check-in notification settings</li>
+            <li>App preferences, such as check-in notification settings (stored locally on your device)</li>
             <li>Support communications you send to us directly, such as emails</li>
           </ul>
 
-          <h4>2.2 Device &amp; Advertising Data</h4>
+          <h4>2.2 Friends &amp; Group Alarms Data (Server-Stored)</h4>
+          <p>
+            If you claim a username to use the Friends or Group Alarm features, the following is
+            stored on our servers (hosted by Supabase) rather than only on your device, because it
+            needs to be shared with other users you connect with:
+          </p>
+          <ul>
+            <li>Your username and optional display name, which are searchable by other RiseMate users</li>
+            <li>
+              Friend requests and friendships &mdash; who you&rsquo;ve sent a request to, received
+              a request from, or are connected with
+            </li>
+            <li>
+              Group alarms you create or are invited to &mdash; label, time, repeat days, mission
+              type, difficulty, sound tone, and the list of participants
+            </li>
+            <li>
+              Your live wake-up mission status for each group alarm (e.g. pending, awake,
+              completed, missed) and the time you woke up, which is visible in real time to the
+              other accepted participants of that group alarm
+            </li>
+          </ul>
+          <p>
+            This data is visible only to the specific friends or group-alarm participants you
+            connect with &mdash; it is never made public to other users of the App, and RiseMate
+            does not currently offer a general-purpose cloud backup or restore of your personal
+            (non-shared) streak history.
+          </p>
+
+          <h4>2.3 Device &amp; Advertising Data</h4>
           <ul>
             <li>
               Device type, operating system, and app version, collected by our advertising
@@ -142,7 +186,7 @@ export default function RiseMatePrivacyPage() {
             </li>
           </ul>
 
-          <h4>2.3 Sensor &amp; Camera Data (Mission-Specific)</h4>
+          <h4>2.4 Sensor &amp; Camera Data (Mission-Specific)</h4>
           <ul>
             <li>
               <strong>Motion / accelerometer data:</strong> used only in real time to count shakes
@@ -153,7 +197,10 @@ export default function RiseMatePrivacyPage() {
               <strong>Camera photos:</strong> used only for the &ldquo;Camera Verification&rdquo;
               mission, to check whether a room is bright by analyzing the captured photo&rsquo;s
               brightness on your device. Photos are not uploaded to any server and are not
-              retained by RiseMate once the mission screen closes.
+              retained by RiseMate once the mission screen closes &mdash; this is true even when
+              Camera Verification is used as the mission for a shared Group Alarm; only your
+              completion status and wake time (Section 2.2) are shared with the group, never the
+              photo itself.
             </li>
             <li>
               <strong>Microphone:</strong> iOS requires this permission to be declared alongside
@@ -162,7 +209,7 @@ export default function RiseMatePrivacyPage() {
             </li>
           </ul>
 
-          <h4>2.4 Notifications</h4>
+          <h4>2.5 Notifications</h4>
           <p>
             RiseMate schedules alarms and optional check-in reminders as local, on-device
             notifications delivered by your phone&rsquo;s operating system. RiseMate does not
@@ -170,7 +217,7 @@ export default function RiseMatePrivacyPage() {
             identity.
           </p>
 
-          <h4>2.5 Billing Information (Premium Subscription)</h4>
+          <h4>2.6 Billing Information (Premium Subscription)</h4>
           <p>
             If you purchase RiseMate Premium, payment is processed entirely by the Apple App Store
             or Google Play Store. Subscription status may be validated and managed through
@@ -186,7 +233,11 @@ export default function RiseMatePrivacyPage() {
               Provide the App&rsquo;s core functionality &mdash; scheduling and ringing alarms,
               running mission challenges, and tracking your wake-up streak
             </li>
-            <li>Personalize the App with your name, if you choose to provide it</li>
+            <li>
+              Operate the optional Friends and Group Alarm features, including letting other users
+              find you by username, managing friend requests, and displaying live wake-up mission
+              status to the participants of a shared group alarm
+            </li>
             <li>Unlock and manage RiseMate Premium features for subscribers</li>
             <li>Serve advertisements to free-tier users (see Section 8)</li>
             <li>
@@ -199,7 +250,20 @@ export default function RiseMatePrivacyPage() {
 
           <h3>4. How We Share Your Information</h3>
 
-          <h4>4.1 Advertising &amp; Mediation Partners</h4>
+          <h4>4.1 With Other Users (Friends &amp; Group Alarms)</h4>
+          <p>
+            If you claim a username, it &mdash; along with your optional display name &mdash;
+            becomes searchable by other RiseMate users so they can send you a friend request. Once
+            you accept a friend request or join a group alarm, the following becomes visible to
+            that specific friend or group&rsquo;s other participants: your username and display
+            name, the group alarm&rsquo;s details (time, days, mission type, difficulty), and your
+            live wake-up mission status (e.g. pending, awake, completed, missed) and wake time for
+            that alarm. This is the only way your personal information is shared with other
+            individual users of the App, and it only happens with people you have chosen to
+            connect with &mdash; never publicly.
+          </p>
+
+          <h4>4.2 Advertising &amp; Mediation Partners</h4>
           <p>
             RiseMate shows ads to free-tier users through TopOn, an ad mediation platform that may
             route ad requests to any of the following networks: Google AdMob, AppLovin, Meta
@@ -209,28 +273,36 @@ export default function RiseMatePrivacyPage() {
             privacy policies.
           </p>
 
-          <h4>4.2 Subscription Management</h4>
+          <h4>4.3 Subscription Management</h4>
           <p>
             If you subscribe to RiseMate Premium, your purchase and subscription status is shared
             with RevenueCat to validate and manage your subscription, including across multiple
             devices.
           </p>
 
-          <h4>4.3 Legal Requirements</h4>
+          <h4>4.4 Backend Infrastructure</h4>
+          <p>
+            Data described in Section 2.2 (usernames, friend connections, group alarms, and
+            mission status) is hosted on our behalf by Supabase, our backend database and
+            authentication provider. Supabase processes this data only to provide the App&rsquo;s
+            Friends and Group Alarm functionality and does not use it for its own purposes.
+          </p>
+
+          <h4>4.5 Legal Requirements</h4>
           <p>
             We may disclose information if required by law, regulation, legal process, or
             governmental request, or when we believe disclosure is necessary to protect the
             rights, property, or safety of RiseMate, App Ventures, our users, or others.
           </p>
 
-          <h4>4.4 Business Transfers</h4>
+          <h4>4.6 Business Transfers</h4>
           <p>
             If App Ventures is involved in a merger, acquisition, reorganization, or sale of
             assets, data may be transferred as part of that transaction. We will notify you of any
             material change in ownership or use of your personal information.
           </p>
 
-          <h4>4.5 Non-Personal Data</h4>
+          <h4>4.7 Non-Personal Data</h4>
           <p>
             We may share aggregated or anonymized data that cannot reasonably be used to identify
             you for analytics, research, and business purposes.
@@ -276,12 +348,16 @@ export default function RiseMatePrivacyPage() {
 
           <h3>6. Data Security</h3>
           <p>
-            Because most RiseMate data is stored locally on your device rather than on our
-            servers, its security largely depends on your device&rsquo;s own protections (such as
-            a passcode or biometric lock). Where we or our partners do process data &mdash; such as
-            advertising identifiers or subscription status &mdash; we rely on industry-standard
-            security practices. No system is completely secure, and we cannot guarantee absolute
-            security of information transmitted or stored through the Services.
+            Your personal alarm, mission, and streak data (Section 2.1) is stored locally on your
+            device, so its security largely depends on your device&rsquo;s own protections (such as
+            a passcode or biometric lock). Data associated with Friends and Group Alarms (Section
+            2.2) is stored on our servers and protected by database access rules that restrict
+            visibility of your username, group alarm details, and mission status to the specific
+            friends and group-alarm participants you connect with. Where we or our partners
+            process other data &mdash; such as advertising identifiers or subscription status
+            &mdash; we rely on industry-standard security practices. No system is completely
+            secure, and we cannot guarantee absolute security of information transmitted or stored
+            through the Services.
           </p>
 
           <h3>7. Cookies &amp; Tracking Technologies</h3>
@@ -313,9 +389,8 @@ export default function RiseMatePrivacyPage() {
 
           <h3>9. Subscriptions &amp; Payments (RiseMate Premium)</h3>
           <p>
-            RiseMate offers an optional Premium subscription that unlocks custom alarm sounds,
-            advanced missions and difficulty tiers, and an optional cloud streak-backup feature.
-            When you purchase Premium:
+            RiseMate offers an optional Premium subscription that unlocks custom alarm sounds and
+            advanced missions and difficulty tiers. When you purchase Premium:
           </p>
           <ul>
             <li>
@@ -335,11 +410,11 @@ export default function RiseMatePrivacyPage() {
           </ul>
           <div className="ps-note-box">
             <p>
-              <strong>Note on Cloud Streak Backups:</strong> Where this Premium feature is
-              available and you choose to enable it, your streak history is synchronized to secure
-              cloud storage so it can be restored across your devices. If the feature is
-              unavailable or you do not enable it, your streak data remains local-only as described
-              in Section 2.
+              <strong>Note on Friends &amp; Group Alarms:</strong> The Friends and Group Alarm
+              features described in Section 2.2 are free and available to all users &mdash; they
+              are not part of Premium. Using them stores your username, group alarm details, and
+              mission status on our servers so they can be shared with the friends and group
+              participants you connect with, as described in Section 4.1.
             </p>
           </div>
 
@@ -351,6 +426,7 @@ export default function RiseMatePrivacyPage() {
               Mintegral, Unity Ads, Yandex Ads, Vungle, Bigo Ads, Pangle, Fyber)
             </li>
             <li>Subscription management (RevenueCat)</li>
+            <li>Backend database, authentication, and realtime infrastructure for Friends &amp; Group Alarms (Supabase)</li>
             <li>Payment processors operated by Apple and Google</li>
             <li>App Store / Play Store review prompts (Apple, Google)</li>
           </ul>
@@ -363,9 +439,12 @@ export default function RiseMatePrivacyPage() {
 
           <h4>11.1 Local Data Control</h4>
           <p>
-            Because most of your data lives on your device, you can view, edit, or delete your
-            alarms, streak history, and settings at any time directly within the App. Uninstalling
-            RiseMate removes all locally stored app data from your device.
+            Your alarms, personal streak history, and app settings live on your device, and you
+            can view, edit, or delete them at any time directly within the App. Uninstalling
+            RiseMate removes all locally stored app data from your device. Uninstalling does{' '}
+            <strong>not</strong> delete your username, friend connections, group alarms, or
+            mission status stored on our servers &mdash; see Section 11.3 to request deletion of
+            that data.
           </p>
 
           <h4>11.2 Advertising Choices</h4>
@@ -376,11 +455,12 @@ export default function RiseMatePrivacyPage() {
 
           <h4>11.3 Data Held By Us Directly</h4>
           <p>
-            Since RiseMate does not maintain user accounts or a general-purpose backend database of
-            your personal data, there is typically no server-side account for us to delete. If you
-            have contacted us directly, purchased Premium, or enabled cloud streak backup, you may
-            request access to or deletion of the records we (or our partners, on our behalf) hold
-            about you by contacting us at <strong>appventures2026@gmail.com</strong>.
+            If you have claimed a username to use Friends or Group Alarms, purchased Premium, or
+            contacted us directly, we (or our partners, on our behalf) hold a limited set of
+            records about you on our servers, as described in Sections 2.2 and 2.6. You may
+            request access to or deletion of these records &mdash; including removing your
+            profile, friend connections, and group alarm history &mdash; by contacting us at{' '}
+            <strong>appventures2026@gmail.com</strong>.
           </p>
 
           <h4>11.4 For EU/EEA Residents (GDPR)</h4>
@@ -408,8 +488,13 @@ export default function RiseMatePrivacyPage() {
           <h3>12. Data Retention</h3>
           <p>
             Data stored locally on your device (alarms, streak history, settings) persists until
-            you delete it within the App or uninstall RiseMate. Data processed by our advertising
-            and subscription partners is retained according to their own retention policies.
+            you delete it within the App or uninstall RiseMate. Data stored on our servers for the
+            Friends and Group Alarm features (Section 2.2) &mdash; your username, friend
+            connections, group alarms, and mission status &mdash; persists until you delete it
+            within the App (e.g. removing a friend or leaving a group alarm) or request deletion as
+            described in Section 11.3; it is not automatically deleted when you uninstall the App.
+            Data processed by our advertising and subscription partners is retained according to
+            their own retention policies.
           </p>
 
           <h3>13. Children&rsquo;s Privacy</h3>
@@ -515,8 +600,12 @@ export default function RiseMatePrivacyPage() {
               falsify your wake-up streak
             </li>
             <li>
-              Interfere with or disrupt the App or any connected advertising, subscription, or
-              platform services
+              Impersonate another person, harass or abuse other users, or misuse the Friends or
+              Group Alarm features to contact people without their consent
+            </li>
+            <li>
+              Interfere with or disrupt the App or any connected advertising, subscription,
+              backend, or platform services
             </li>
             <li>
               Use the App to capture or process images of individuals without their knowledge where
@@ -535,11 +624,19 @@ export default function RiseMatePrivacyPage() {
 
           <h3>4. User Content</h3>
           <p>
-            You may enter a name, custom alarm labels, and other preferences, and may capture
-            photos during the Camera Verification mission (&ldquo;User Content&rdquo;). You retain
-            ownership of your User Content. Camera Verification photos are used solely for
-            on-device brightness checking and are not retained by RiseMate after the mission
-            session ends, uploaded to any server, or shared with any third party.
+            You may enter a username, display name, custom alarm labels, and other preferences,
+            and may capture photos during the Camera Verification mission (&ldquo;User
+            Content&rdquo;). You retain ownership of your User Content. Camera Verification photos
+            are used solely for on-device brightness checking and are not retained by RiseMate
+            after the mission session ends, uploaded to any server, or shared with any third party.
+          </p>
+          <p>
+            If you use the Friends or Group Alarm features, your username, display name, group
+            alarm details, and mission status are visible to the friends and group-alarm
+            participants you connect with, as described in our Privacy Policy. You are solely
+            responsible for the content of any username, display name, or alarm label you choose,
+            and must not use them to impersonate another person, or to harass, abuse, or
+            misrepresent yourself to other users.
           </p>
           <p>
             RiseMate is a wake-up and habit-accountability tool. It does not provide medical,
@@ -550,11 +647,14 @@ export default function RiseMatePrivacyPage() {
 
           <h3>5. Device Security</h3>
           <p>
-            Because RiseMate does not require an account, you are responsible for the physical and
-            digital security of the device on which you install the App, including any passcode,
-            biometric lock, or other protection safeguarding access to the App and its locally
-            stored data. Notify us promptly at <strong>appventures2026@gmail.com</strong> if you
-            become aware of unauthorized access to your Premium subscription.
+            RiseMate does not require you to set a password, and any account created on your
+            behalf (Section 1 of our Privacy Policy) is tied to your device rather than to
+            credentials you manage. You are responsible for the physical and digital security of
+            the device on which you install the App, including any passcode, biometric lock, or
+            other protection safeguarding access to the App, its locally stored data, and any
+            Friends or Group Alarm connections made from that device. Notify us promptly at{' '}
+            <strong>appventures2026@gmail.com</strong> if you become aware of unauthorized access
+            to your Premium subscription or your account.
           </p>
 
           <h3>6. Permissions &amp; Device Access</h3>
