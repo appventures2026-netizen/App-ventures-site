@@ -21,4 +21,15 @@ export const apps = [
     hasPrivacyPolicy: true,
     privacyUrl: `${import.meta.env.BASE_URL}privacy/vale`,
   },
+  {
+    id: 'repchallenge',
+    name: 'Rep Challenge',
+    tagline: 'Push-Up & Squat Counter',
+    description:
+      'A camera-based rep counter that scores your push-up and squat form in real time, tracks your progress, and lets you compete with friends on challenges and a global leaderboard.',
+    accent: '#FF5F1F',
+    icon: '💪',
+    hasPrivacyPolicy: true,
+    privacyUrl: `${import.meta.env.BASE_URL}privacy/repchallenge`,
+  },
 ]
