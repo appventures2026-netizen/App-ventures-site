@@ -382,3 +382,4 @@ vidoomy.com, 8953515, RESELLER
 brightmountainmedia.com, 2686958, RESELLER
 copper6.com, 766114, RESELLER
 e-planning.net, 6a7f877127485fdb, RESELLER, c1ba615865ed87b2
+facebook.com, 28597563993216307, DIRECT, c3e20eee3f780d68
