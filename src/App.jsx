@@ -6,6 +6,7 @@ import Footer from './components/Footer.jsx'
 import RiseMatePrivacyPage from './pages/RiseMatePrivacyPage.jsx'
 import ValePrivacyPage from './pages/ValePrivacyPage.jsx'
 import RepChallengePrivacyPage from './pages/RepChallengePrivacyPage.jsx'
+import PuppySortPrivacyPage from './pages/PuppySortPrivacyPage.jsx'
 import './App.css'
 
 function App() {
@@ -21,6 +22,10 @@ function App() {
 
   if (path === 'privacy/repchallenge') {
     return <RepChallengePrivacyPage />
+  }
+
+  if (path === 'privacy/puppysort') {
+    return <PuppySortPrivacyPage />
   }
 
   return (

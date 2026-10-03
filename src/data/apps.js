@@ -32,4 +32,15 @@ export const apps = [
     hasPrivacyPolicy: true,
     privacyUrl: `${import.meta.env.BASE_URL}privacy/repchallenge`,
   },
+  {
+    id: 'puppysort',
+    name: 'Puppy Sort',
+    tagline: 'Sorting Puzzle Game',
+    description:
+      'A cozy sorting puzzle where you match puppies into their boxes, earn coins and stars, unlock new breeds, and decorate your own puppy park.',
+    accent: '#2F8FE0',
+    icon: '🐶',
+    hasPrivacyPolicy: true,
+    privacyUrl: `${import.meta.env.BASE_URL}privacy/puppysort`,
+  },
 ]
